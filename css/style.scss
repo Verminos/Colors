@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+// VARIABLES
+$colorBrown: #ee732f;
+$colorRed: #f74c55;
+$colorGreen: #2d5f3b;
+$colorGrey: #404040;
+$colorPink: #fb636b;
+$colorWhite: #fff;
+$colorBlack: #000;
+$colorDark: #272727;
+$colorBurgundy: #c53840;
+$colorСoniferous: #1c3d25;
+$colorTran: transparent;
+
+$fontBtn: 24px;
+$fontTitle: 22px;
+$fontText: 16px;
+
+$fontTextPad: 26px;
+$fontBtnPad: 28px;
+
+$anotherWidth: 36px;
+$anotherHeight: 32px;
+
+html{
+	scroll-behavior: smooth;
+	overflow-x:hidden;
+}
+
+@font-face{
+	font-family: 'SusaLight';
+	src:url('../../fonts/SusaLight/SusaLight.otf') format('otf'),
+		url('../../fonts/SusaLight/SusaLight.ttf') format('ttf'),
+		url('../../fonts/SusaLight/SusaLight.woff') format('woff');
+		font-weight: 300;
+		font-style: normal;
+}
+
+@font-face{
+	font-family: 'OptimaLT';
+	src:url('../../fonts/OptimaLT/OptimaLT.otf') format('otf'),
+		url('../../fonts/OptimaLT/OptimaLT.ttf') format('ttf'),
+		url('../../fonts/OptimaLT/OptimaLT.woff') format('woff');
+		font-weight: 900;
+		font-style: normal;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: $colorGrey;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+*{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.color__one {
+		background-color: $colorBrown;
+	}
+.color__two {
+		background-color: $colorRed;
+	}
+.color__three {
+		background-color: $colorGreen;
+	}
+.color__four {
+		background-color: $colorGrey;
+	}
+.color__five {
+		background-color: $colorPink;
+	}
+
+// Section Menu
+.menu {
+	background: url("../../image/bg.png");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	&__nav{
+		background: transparent;
+		&:hover{
+			background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+		}
+		&__logo {
+			color: $colorWhite !important;
+			font-size: 50px;
+			font-family: 'SusaLight', sans-serif;
+			padding-left: 120px;
+		}
+		&__btn {
+			background: transparent;
+			&:hover{
+				background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+			}
+		}
+		&__icon {
+			color: $colorWhite;
+		}
+		&__box__block {
+			padding-right: 40px;
+			&__item__link {
+				font-size: $fontText;
+				color: $colorWhite !important;
+				text-transform: uppercase;
+				margin: 0 20px;
+			}
+		}
+	}
+	&__info {
+		position: absolute;
+		bottom: 45%;
+		right: 25%;
+		&__box__title {
+			color: $colorWhite;
+			font-size: 40px;
+		}
+		&__box__text {
+			color: $colorWhite;
+			font-size: $fontText;
+		}
+		&__box__btn {
+			color: $colorWhite;
+			font-size: $fontBtn;
+			background-color: $colorTran;
+			padding: 1px 30px;
+			border: 2px solid $colorWhite;
+			border-radius: 9px;
+			margin-top: 30px;
+			transition: 0.2s all linear;
+			&:hover {
+				color: $colorRed;
+				border-color: $colorRed;
+				background-color: $colorWhite;
+			}
+		}
+	}	
+}
+// Section Menu End
+
+// Section Info
+.info {
+	&__box {
+		margin: 90px 0 100px;
+		padding: 0 90px;
+		&__title {
+			color: $colorBlack;
+			font-size: 30px;
+		}
+		&__text {
+			margin: 25px 0 60px;
+		}
+	}
+}
+.size {
+	height: $anotherHeight;
+	width: $anotherWidth;
+}
+// Section Info End
+
+// Section About
+.about {
+	background: linear-gradient(to right, $colorGrey 0%, $colorGrey 50%, $colorGreen 50%, $colorGreen 100%);
+	color: $colorWhite;
+	&__box__block {
+		padding: 30px 50px;
+		&__top__title {
+			font-size: $fontTitle;
+			padding-left: 15px;
+		}
+		&__text {
+			margin: 20px 0;
+		}
+		&__lower {
+			padding-right: 25px;
+		}
+		&__lower__btn {
+			font-family: 'OptimaLT', sans-serif;
+			font-size: 24px;
+			border: none;
+			color: $colorWhite;
+			line-height: normal;
+			padding: 0 6px;
+			transition: 0.2s all linear;
+			&:hover {
+				color: $colorBlack;
+			}
+		}
+	}
+}
+.another_back {
+	background-color: #f74c55;
+}
+.color_btn_left {
+	background-color: $colorDark;
+	&:hover {
+		background-color: $colorWhite;
+	}
+}
+.color_btn_medium {
+	background-color: $colorBurgundy;
+	&:hover {
+		background-color: $colorWhite;
+	}
+}
+.color_btn_right {
+	background-color: $colorСoniferous;
+	&:hover {
+		background-color: $colorWhite;
+	}
+}
+// Section About End
+
+// Section More
+.more {
+	background: linear-gradient(rgba(0,0,0,0.9) , rgba(0,0,0,0.9)) , url("../../image/bg2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: $colorWhite;
+	&__box__title {
+		font-size: 42px;
+		& span {
+			font-weight: 700;
+		}
+	}
+	&__box__btn {
+		color: $colorWhite;
+		font-size: $fontBtn;
+		background-color: $colorTran;
+		border: 2px solid $colorWhite;
+		border-radius: 9px;
+		padding: 5px 35px;
+		margin-top: 30px;
+		transition: 0.2s all linear;
+		&:hover {
+			color: $colorBlack;
+			background-color: $colorWhite;
+			border-color: $colorTran;
+		}
+	}
+}
+// Section More End
+
+// Section Footer
+.footer {
+	overflow: hidden;
+	&__box__block__text {
+		font-size: $fontText;
+		font-weight: 400;
+		color: $colorBlack;
+		margin: 30px 0;
+	}
+}
+.another_size {
+	width: 32px;
+	height: 9px;
+}
+// Section Footer End
+
+@media  (max-width: 768px) {
+
+.container {
+    width: 100%;
+    max-width: 768px;  
+    margin: 0 auto;
+}
+
+body {
+	font-size: $fontTextPad;
+}
+
+// Section Menu
+.menu {
+	&__nav__logo {
+		font-size: 70px;
+		padding-left: 40px;
+	}
+	&__nav__box__block__item__link {
+		font-size: $fontTextPad;
+	}
+	&__info {
+		bottom: 35%;
+		&__box {
+			text-align: center !important;
+		}
+		&__box__title {
+			font-size: 70px;
+		}
+		&__box__text {
+			font-size: $fontTextPad;
+		}
+		&__box__btn {
+			font-size: $fontBtnPad;
+			padding: 3px 40px;
+			margin-top: 30px;
+		}
+	}
+}
+// Section Menu End
+
+// Section Info
+.info {
+	&__box {
+		text-align: center !important;
+		padding: 0 20px;
+		&__title {
+			font-size: 45px;
+		}
+		&__color {
+			justify-content: center;
+		}
+	}
+}
+// Section Info End
+
+// Section About
+.about {
+	&__box__block {
+		padding: 50px;
+		&__top__svg {
+			width: 60px;
+			height: 60px;
+		}
+		&__top__title {
+			font-size: 40px;
+		}
+		&__lower__btn {
+			font-size: 45px;
+			padding: 0 10px;
+		}
+	}
+}
+.another_back_top {
+	background-color: $colorGrey;
+}
+.another_back_lower {
+	background-color: $colorGreen;
+}
+// Section About End
+
+// Section More
+.more {
+	&__box__title {
+		font-size: 52px;
+	}
+	&__box__btn {
+		font-size: $fontBtnPad;
+		padding: 7px 42px;
+	}
+}
+// Section More End
+
+// Section Footer
+.footer {
+	overflow: hidden;
+	&__box__block__text {
+		font-size: $fontTextPad;
+	}
+}
+// Section Footer End
+
+}
+
+@media  (max-width: 576px) {
+	
+.container {
+    width: 100%;
+    max-width: 576px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+body {
+	font-size: $fontText;
+}
+
+// Section Menu
+.menu {
+	&__nav__logo {
+		font-size: 40px;
+		padding: 0;
+	}
+	&__nav__box__block__item__link {
+		font-size: $fontText;
+	}
+	&__info {
+		bottom: 35%;
+		right: 20%;
+		&__box {
+			text-align: center !important;
+		}
+		&__box__title {
+			font-size: 40px;
+		}
+		&__box__text {
+			font-size: $fontText;
+		}
+		&__box__btn {
+			font-size: $fontBtn;
+			padding: 1px 30px;
+		}
+	}
+}
+// Section Menu End
+
+// Section Info
+.info {
+	&__box {
+		padding: 0 20px;
+		margin: 60px 0 80px;
+		&__title {
+			font-size: 36px;
+		}
+	}
+}
+// Section Info End
+
+// Section About
+.about {
+	&__box__block__top__svg {
+		width: 50px;
+		height: 50px;
+	}
+	&__box__block__top__title {
+		font-size: 30px;
+	}
+	&__box__block__lower__btn {
+		font-size: 35px;
+		padding: 0 10px;
+	}
+}
+// Section About End
+
+// Section More
+.more {
+	&__box__title {
+		font-size: 42px;
+	}
+	&__box__btn {
+		font-size: $fontBtn;
+		padding: 5px 35px;
+	}
+}
+// Section More End
+
+// Section Footer
+.footer {
+	overflow: hidden;
+	&__box__block__text {
+		font-size: $fontText;
+	}
+}
+// Section Footer End
+
+}
